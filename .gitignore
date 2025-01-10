@@ -1,0 +1,52 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+django_env/
+*.env
+
+# Django stuff:
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Django migrations
+*/migrations/*.pyc
+*/migrations/*.pyo
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Pycharm project files
+.idea/
+
+# dotenv files
+.env
