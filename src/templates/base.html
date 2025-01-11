@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Your First Django Project{% endblock %}</title>
+    
     {% include 'base/css.html' %}
   </head>
   <body>
     {% include 'base/navbar.html' %}
-    {% block content %}
-    {% endblock %}
-    {%  include 'base/js.html' %}
+
+    <div class="container-fluid">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+
+    {% include 'base/js.html' %}
   </body>
 </html>
