@@ -1,3 +1,5 @@
+from django.shortcuts import render
+
 # from django.http import HttpResponse
 from django.shortcuts import render
 from .forms import LandingPageForm
@@ -14,12 +16,4 @@ def home_page(request, *args, **kwargs):
         "form": form
     }
     # parag = "{title} Justin!".format(**context)
-    return render(request, "home.html", context)
-
-def abc_page(request, *args, **kwargs):
-    title = "ABC"
-    context = {
-        "title": title
-    }
-    # parag = "{title} Justin!".format(**context)
-    return render(request, "home.html", context)
+    return render(request, "landing_pages/home.html", context)

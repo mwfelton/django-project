@@ -1,6 +1,5 @@
 from django import forms
 
-
 class LandingPageForm(forms.Form):
     name = forms.CharField(required=False)
     email = forms.EmailField()
